@@ -1,41 +1,57 @@
 const components = {
-  Catalog: {
-    name: "catalog_page",
-    path: "components_by_page/catalog_page/components",
+  Home: { name: "home_page", path: "components_by_page/home_page/components" },
+  CertificatesCatalog: {
+    name: "certificate_catalog_page",
+    path: "components_by_page/certificate_catalog_page/components",
   },
-  Certificate: {
-    name: "certificate_page",
-    path: "components_by_page/certificate_page/components",
+  CertificateLearn: {
+    name: "certificate_learn_page",
+    path: "components_by_page/certificate_learn_page/components",
+  },
+  ExerciseCatalog: {
+    name: "exercise_catalog_page",
+    path: "components_by_page/exercise_catalog_page/components",
+  },
+  ExerciseLearn: {
+    name: "exercise_learn_page",
+    path: "components_by_page/exercise_learn_page/components",
   },
   User: { name: "user_page", path: "components_by_page/user_page/components" },
-  Home: { name: "home_page", path: "components_by_page/home_page/components" },
 };
 
 const sections = {
-  Catalog: {
-    name: "catalog_page",
-    path: "components_by_page/catalog_page/sections",
+  Home: { name: "home_page", path: "components_by_page/home_page/sections" },
+  CertificatesCatalog: {
+    name: "certificate_catalog_page",
+    path: "components_by_page/certificate_catalog_page/sections",
   },
-  Certificate: {
-    name: "certificate_page",
-    path: "components_by_page/certificate_page/sections",
+  CertificateLearn: {
+    name: "certificate_learn_page",
+    path: "components_by_page/certificate_learn_page/sections",
+  },
+  ExerciseCatalog: {
+    name: "exercise_catalog_page",
+    path: "components_by_page/exercise_catalog_page/sections",
+  },
+  ExerciseLearn: {
+    name: "exercise_learn_page",
+    path: "components_by_page/exercise_learn_page/sections",
   },
   User: { name: "user_page", path: "components_by_page/user_page/sections" },
-  Home: { name: "home_page", path: "components_by_page/home_page/sections" },
 };
 
 module.exports = {
   helpers: {
-    getComponentPath: (component = "Catalog") => {
+    getComponentPath: (component = "Home") => {
       return components[component].path;
     },
-    getComponent: (component = "Catalog") => {
+    getComponent: (component = "Home") => {
       return components[component].name;
     },
-    getSectionPath: (section = "Catalog") => {
+    getSectionPath: (section = "Home") => {
       return sections[section].path;
     },
-    getSection: (section = "Catalog") => {
+    getSection: (section = "Home") => {
       return sections[section].name;
     },
   },

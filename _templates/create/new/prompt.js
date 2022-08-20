@@ -13,12 +13,14 @@ module.exports = [
     type: "select",
     name: "type_location",
     message: "Where do you want to create",
-    limit: 4,
+    limit: 6,
     choices: [
-      { name: "Catalog" },
-      { name: "User" },
-      { name: "Certificate" },
+      { name: "ExerciseCatalog" },
+      { name: "ExerciseLearn" },
+      { name: "CertificateLearn" },
+      { name: "CertificatesCatalog" },
       { name: "Home" },
+      { name: "User" },
     ],
   },
   {
