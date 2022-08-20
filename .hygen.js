@@ -54,5 +54,8 @@ module.exports = {
     getSection: (section = "Home") => {
       return sections[section].name;
     },
+    toUpper: (st) => {
+      return st.charAt(0).toUpperCase() + st.slice(1).toLowerCase();
+    },
   },
 };
